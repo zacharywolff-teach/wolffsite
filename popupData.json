@@ -1,0 +1,22 @@
+{
+  "Indigenous cultures": {
+    "text": "Cultures of Indigenous peoples before Europeans arrived",
+    "img": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/native-american-cultures-gettyimages-80242318?_a=BAVAZGDX0"
+  },
+  "European myths": {
+    "text": "Myths Europeans held about Indigenous peoples",
+    "img": "https://raw.githubusercontent.com/zacharywolff-teach/wolffsite/main/us1/unit1/topic2.jpg"
+  },
+  "Historical records": {
+    "text": "Historical evidence and records",
+    "img": "https://raw.githubusercontent.com/zacharywolff-teach/wolffsite/main/us1/unit1/topic3.jpg"
+  },
+  "Native leaders": {
+    "text": "Leaders of Native Nations",
+    "img": "https://raw.githubusercontent.com/zacharywolff-teach/wolffsite/main/us1/unit1/people1.jpg"
+  },
+  "Explorers": {
+    "text": "Explorers who contacted Indigenous Nations",
+    "img": "https://raw.githubusercontent.com/zacharywolff-teach/wolffsite/main/us1/unit1/people2.jpg"
+  }
+}
