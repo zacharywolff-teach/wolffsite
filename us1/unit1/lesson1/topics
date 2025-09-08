@@ -1,0 +1,20 @@
+{
+  "title": "Indigenous Nation Misconceptions",
+  "learningGoal": "Understand common misconceptions about Indigenous Nations before European contact.",
+  "topics": [
+    {"name": "Indigenous cultures", "popupUrl": "Native cultures, or indigenous cultures, are the unique traditions, beliefs, practices, and worldviews of the original inhabitants of a region, often characterized by a deep connection to their ancestral lands and a cyclical relationship with nature and the community. These cultures vary significantly across different groups, such as the Lakota of the Plains or the Hopi of the Southwest, but generally emphasize interdependence, kinship, the spiritual significance of the land, and communal well-being through practices like prayer, communal child-rearing, and traditions of reciprocity.  
+"},
+    {"name": "European myths", "popupUrl": "https://raw.githubusercontent.com/.../topic2.html"},
+    {"name": "Historical records", "popupUrl": "https://raw.githubusercontent.com/.../topic3.html"}
+  ],
+  "people": [
+    {"name": "Native leaders", "popupUrl": "https://raw.githubusercontent.com/.../person1.html"},
+    {"name": "Explorers", "popupUrl": "https://raw.githubusercontent.com/.../person2.html"}
+  ],
+  "era": {"name": "Pre-1492", "popupUrl": "https://raw.githubusercontent.com/.../era.html"},
+  "resources": [
+    {"name": "Source 1", "popupUrl": "https://raw.githubusercontent.com/zacharywolff-teach/wolffsite/main/us1/unit1/lesson1/source1"}
+  ],
+  "notes": {"name": "Open Notes", "popupUrl": "https://raw.githubusercontent.com/zacharywolff-teach/wolffsite/main/us1/unit1/lesson1/notes1"},
+  "assessment": {"text": "Write a brief essay explaining misconceptions about Indigenous Nations.", "popupUrl": ""}
+}
