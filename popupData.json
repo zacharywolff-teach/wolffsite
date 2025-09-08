@@ -38,13 +38,13 @@
   "Immigrant": {
     "text": "A person who leaves their home country to live permanently in another country",
     "img": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Immigrants_arriving_at_Ellis_Island.jpg"
-{
+  },
   "Population": {
     "text": "The total number of people living in a particular area, city, country, or region",
     "img": "https://upload.wikimedia.org/wikipedia/commons/3/3f/World_population_density_map.png"
   },
   "Net Worth": {
-    "text": "The total value of a person’s, company’s, or organization’s assets minus any debts or liabilities",
+    "text": "The total value of a person's, company’s, or organization’s assets minus any debts or liabilities",
     "img": "https://upload.wikimedia.org/wikipedia/commons/6/66/Money_stack_icon.png"
   },
   "Industry": {
