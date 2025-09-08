@@ -38,5 +38,29 @@
   "Immigrant": {
     "text": "A person who leaves their home country to live permanently in another country",
     "img": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Immigrants_arriving_at_Ellis_Island.jpg"
+{
+  "Population": {
+    "text": "The total number of people living in a particular area, city, country, or region",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3f/World_population_density_map.png"
+  },
+  "Net Worth": {
+    "text": "The total value of a person’s, company’s, or organization’s assets minus any debts or liabilities",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/6/66/Money_stack_icon.png"
+  },
+  "Industry": {
+    "text": "Economic activity concerned with the production of goods or services, often organized in factories or businesses",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/09/Factory_in_Shanghai.jpg"
+  },
+  "Power Loom": {
+    "text": "A mechanized loom powered by water, steam, or electricity that speeds up the weaving of cloth compared to manual handlooms",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/Power_loom_Industrial_Revolution.jpg"
+  },
+  "Weaving": {
+    "text": "The process of interlacing threads or yarns at right angles to make fabric or cloth",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/5/55/Hand_loom_weaving.jpg"
+  },
+  "Domestic System": {
+    "text": "A method of production in which goods are made at home by individual workers or families rather than in factories; also called the putting-out system",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/2/21/Domestic_system_illustration.jpg"
   }
 }
