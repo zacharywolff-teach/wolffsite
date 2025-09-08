@@ -18,5 +18,25 @@
   "Explorers": {
     "text": "Explorers who contacted Indigenous Nations",
     "img": "https://raw.githubusercontent.com/zacharywolff-teach/wolffsite/main/us1/unit1/people2.jpg"
+  },
+  "Urbanization": {
+    "text": "The process of people moving from rural areas to cities, leading to the growth and expansion of cities",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/17/Lower_East_Side_-_NYC_1900.jpg"
+  },
+  "Tenement": {
+    "text": "A crowded, often poorly built apartment building where many immigrant and working-class families lived during the late 1800s and early 1900s",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Lower_East_Side_tenement_c1900.jpg"
+  },
+  "Child Labor": {
+    "text": "The practice of children working in factories, mines, or other jobs, often for long hours, low pay, and in unsafe conditions",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bibb_Mill_No._1_Macon_GA_-_1909.jpg"
+  },
+  "Ellis Island": {
+    "text": "An immigration station in New York Harbor (opened in 1892) where millions of immigrants, mostly from Europe, were processed before entering the United States",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Ellis_Island_aerial_view.jpg"
+  },
+  "Immigrant": {
+    "text": "A person who leaves their home country to live permanently in another country",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Immigrants_arriving_at_Ellis_Island.jpg"
   }
 }
