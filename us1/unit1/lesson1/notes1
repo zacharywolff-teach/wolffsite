@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Native Americans Facts Table</title>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+
+<h2>Native Americans Facts</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>What some think</th>
+      <th>What is actually true</th>
+      <th>How do we know this is true?</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Native Americans lived in a wilderness and didn’t change much</td>
+      <td>Native Americans changed their environment</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Native Americans had simple houses and mostly lived in teepees</td>
+      <td>Native Americans had sophisticated housing</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All Native Americans were hunters and gatherers</td>
+      <td>Native Americans grew and created food</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Native Americans couldn’t invent the wheel</td>
+      <td>Native Americans understood how to use the wheel</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
