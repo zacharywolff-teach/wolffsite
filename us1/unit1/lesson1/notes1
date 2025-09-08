@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Native Americans Facts Table</title>
+<title>Editable Native Americans Facts Table</title>
 <style>
   table {
     width: 100%;
@@ -17,11 +17,14 @@
   th {
     background-color: #f2f2f2;
   }
+  td {
+    min-width: 150px;
+  }
 </style>
 </head>
 <body>
 
-<h2>Native Americans Facts</h2>
+<h2>Native Americans Facts (Editable)</h2>
 
 <table>
   <thead>
@@ -34,28 +37,28 @@
   </thead>
   <tbody>
     <tr>
-      <td>Native Americans lived in a wilderness and didn’t change much</td>
-      <td>Native Americans changed their environment</td>
-      <td></td>
-      <td></td>
+      <td contenteditable="true">Native Americans lived in a wilderness and didn’t change much</td>
+      <td contenteditable="true">Native Americans changed their environment</td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
     </tr>
     <tr>
-      <td>Native Americans had simple houses and mostly lived in teepees</td>
-      <td>Native Americans had sophisticated housing</td>
-      <td></td>
-      <td></td>
+      <td contenteditable="true">Native Americans had simple houses and mostly lived in teepees</td>
+      <td contenteditable="true">Native Americans had sophisticated housing</td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
     </tr>
     <tr>
-      <td>All Native Americans were hunters and gatherers</td>
-      <td>Native Americans grew and created food</td>
-      <td></td>
-      <td></td>
+      <td contenteditable="true">All Native Americans were hunters and gatherers</td>
+      <td contenteditable="true">Native Americans grew and created food</td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
     </tr>
     <tr>
-      <td>Native Americans couldn’t invent the wheel</td>
-      <td>Native Americans understood how to use the wheel</td>
-      <td></td>
-      <td></td>
+      <td contenteditable="true">Native Americans couldn’t invent the wheel</td>
+      <td contenteditable="true">Native Americans understood how to use the wheel</td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
     </tr>
   </tbody>
 </table>
