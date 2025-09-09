@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reading with Hover Popups</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    .term {
+      position: relative;
+      color: #004080;
+      border-bottom: 1px dashed #004080;
+      cursor: help;
+    }
+
+    .popup {
+      visibility: hidden;
+      width: 220px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      padding: 8px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.9em;
+    }
+
+    .popup::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    .term:hover .popup {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <p>
+    The idea of 
+    <span class="term">private land ownership
+      <span class="popup">A system in which individuals, rather than communities, hold legal rights to land.</span>
+    </span> 
+    was foreign; land was held 
+    <span class="term">communally
+      <span class="popup">Shared by all members of a group rather than owned by individuals.</span>
+    </span> 
+    and worked 
+    <span class="term">collectively
+      <span class="popup">Done together as a group, with shared responsibility.</span>
+    </span>. 
+    Native Americans shared the land with each other.
+  </p>
+
+  <p>
+    The largest 
+    <span class="term">domesticated animals
+      <span class="popup">Animals that have been tamed and bred for human use, such as food, work, or companionship.</span>
+    </span> 
+    were 
+    <span class="term">dogs
+      <span class="popup">Domesticated canines used for hunting, guarding, and companionship.</span>
+    </span>, 
+    <span class="term">llamas
+      <span class="popup">South American animals domesticated for carrying loads and providing fiber.</span>
+    </span>, 
+    and 
+    <span class="term">alpacas
+      <span class="popup">South American animals domesticated for their soft wool, used in textiles.</span>
+    </span>, 
+    and therefore the Indians could not rely on such animal by-products such as 
+    <span class="term">wool
+      <span class="popup">A textile fiber obtained mainly from sheep and similar animals, used for clothing and fabrics.</span>
+    </span>, 
+    <span class="term">leather
+      <span class="popup">Material made from the skin of animals, used for clothing, tools, and shelter.</span>
+    </span>, 
+    <span class="term">milk
+      <span class="popup">A nutrient-rich liquid produced by mammals to feed their young, also used for food products.</span>
+    </span>, 
+    and 
+    <span class="term">meat
+      <span class="popup">The flesh of animals used as food.</span>
+    </span>. 
+    Although some societies had developed the 
+    <span class="term">wheel
+      <span class="popup">A circular object that rotates on an axle; used to create carts, machines, and tools.</span>
+    </span>, 
+    it was used as a toy. No society had shaped 
+    <span class="term">metal
+      <span class="popup">A solid material like copper, gold, or iron, valued for strength, durability, and ability to be shaped.</span>
+    </span> 
+    into 
+    <span class="term">guns
+      <span class="popup">Weapons that use gunpowder to fire projectiles.</span>
+    </span>, 
+    <span class="term">swords
+      <span class="popup">Bladed weapons designed for cutting or thrusting.</span>
+    </span>, 
+    or 
+    <span class="term">tools
+      <span class="popup">Objects used to carry out tasks, such as farming, building, or crafting.</span>
+    </span>; 
+    none had 
+    <span class="term">gunpowder
+      <span class="popup">An explosive mixture used historically for firearms, fireworks, and mining.</span>
+    </span>, 
+    <span class="term">sailing ships
+      <span class="popup">Large boats powered by sails, used for long-distance travel and trade.</span>
+    </span>, 
+    or 
+    <span class="term">mounted warriors
+      <span class="popup">Fighters on horseback, giving them speed and power in battle.</span>
+    </span>.
+  </p>
+
+</body>
+</html>
