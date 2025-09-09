@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reading with Hover Popups</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    .term {
+      position: relative;
+      color: #004080;
+      border-bottom: 1px dashed #004080;
+      cursor: help;
+    }
+
+    .popup {
+      visibility: hidden;
+      width: 220px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      padding: 8px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; /* Position above the word */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.9em;
+    }
+
+    /* Arrow */
+    .popup::after {
+      content: "";
+      position: absolute;
+      top: 100%; /* At the bottom of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    .term:hover .popup {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <p>
+    Although few textbooks today use the word 
+    <span class="term">"primitive"
+      <span class="popup">An outdated word once used to describe early societies, now avoided because it suggests inferiority.</span>
+    </span> 
+    to describe pre-contact 
+    <span class="term">Native Americans
+      <span class="popup">Indigenous peoples of North America before the arrival of Europeans.</span>
+    </span>, 
+    many still give the impression that they were a simple, small group of people that only 
+    <span class="term">hunted
+      <span class="popup">To pursue and kill animals for food.</span>
+    </span> 
+    and 
+    <span class="term">fished
+      <span class="popup">To catch fish for food.</span>
+    </span> 
+    without changing the 
+    <span class="term">wilderness
+      <span class="popup">Land in a natural state, not significantly altered by humans.</span>
+    </span> 
+    around them. As we shall see, this view is incorrect; in fact, Native American societies were 
+    <span class="term">diverse
+      <span class="popup">Full of variety and differences.</span>
+    </span>, 
+    and complicated.
+  </p>
+
+  <p>
+    Food discovered and 
+    <span class="term">domesticated
+      <span class="popup">The process of adapting wild plants or animals for human use.</span>
+    </span> 
+    by Native Americans would transform the diet of Europe and Asia. Native Americans also made many important contributions to modern 
+    <span class="term">medicine
+      <span class="popup">The science of healing and treating illness.</span>
+    </span>, 
+    <span class="term">art
+      <span class="popup">The expression of human creativity through visual, musical, or performance forms.</span>
+    </span>, 
+    and 
+    <span class="term">architecture
+      <span class="popup">The design and construction of buildings and structures.</span>
+    </span>.
+  </p>
+
+</body>
+</html>
