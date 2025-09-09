@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reading with Hover Popups</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    .term {
+      position: relative;
+      color: #004080;
+      border-bottom: 1px dashed #004080;
+      cursor: help;
+    }
+
+    .popup {
+      visibility: hidden;
+      width: 220px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      padding: 8px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; /* Position above the word */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.9em;
+    }
+
+    .popup::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    .term:hover .popup {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <p>
+    During the thousands of years before they met Europeans, the 
+    <span class="term">Native American
+      <span class="popup">Indigenous peoples of North America before the arrival of Europeans.</span>
+    </span> 
+    people developed inventive and creative 
+    <span class="term">cultures
+      <span class="popup">The customs, arts, social institutions, and achievements of a particular nation or people.</span>
+    </span>. 
+    They grew plants for 
+    <span class="term">food
+      <span class="popup">Substances eaten to provide nourishment and energy.</span>
+    </span>, 
+    <span class="term">dyes
+      <span class="popup">Natural or artificial substances used to color materials like textiles or leather.</span>
+    </span>, 
+    <span class="term">medicines
+      <span class="popup">Substances used to treat illness, relieve pain, or improve health.</span>
+    </span>, 
+    and 
+    <span class="term">textiles
+      <span class="popup">Woven or knitted fabrics such as cloth, used for clothing and other purposes.</span>
+    </span>. 
+    They 
+    <span class="term">domesticated
+      <span class="popup">The process of adapting wild plants or animals for human use.</span>
+    </span> 
+    animals, established extensive patterns of 
+    <span class="term">trade
+      <span class="popup">The exchange of goods and services between people or groups, often across long distances.</span>
+    </span>, 
+    built 
+    <span class="term">cities
+      <span class="popup">Large, permanent settlements with population centers, governance, and commerce.</span>
+    </span>, 
+    produced monumental 
+    <span class="term">architecture
+      <span class="popup">The design and construction of large, impressive buildings and structures.</span>
+    </span>, 
+    and developed detailed systems of 
+    <span class="term">religious beliefs
+      <span class="popup">Organized systems of spiritual practices, traditions, and worldviews about the sacred.</span>
+    </span>. 
+    Native Americans not only adapted to 
+    <span class="term">diverse
+      <span class="popup">Full of variety and differences.</span>
+    </span> 
+    and demanding 
+    <span class="term">environments
+      <span class="popup">The surroundings in which people, animals, or plants live and interact.</span>
+    </span>, 
+    they also reshaped the natural environments to meet their needs.
+  </p>
+
+</body>
+</html>
