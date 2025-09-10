@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Editable Native Americans Facts Table</title>
+<title>Indigenous Nations Misconceptions</title>
 <style>
   table {
     width: 100%;
@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<h2>Native Americans Facts (Editable)</h2>
+<h2>Indigenous Nations Facts (Editable)</h2>
 
 <table>
   <thead>
@@ -37,26 +37,26 @@
   </thead>
   <tbody>
     <tr>
-      <td contenteditable="true">Native Americans lived in a wilderness and didn’t change much</td>
-      <td contenteditable="true">Native Americans changed their environment</td>
+      <td contenteditable="true">Indigenous Nations lived in a wilderness and didn’t change much</td>
+      <td contenteditable="true">Indigenous Nations changed their environment</td>
       <td contenteditable="true"></td>
       <td contenteditable="true"></td>
     </tr>
     <tr>
-      <td contenteditable="true">Native Americans had simple houses and mostly lived in teepees</td>
-      <td contenteditable="true">Native Americans had sophisticated housing</td>
+      <td contenteditable="true">Indigenous Nations had simple houses and mostly lived in teepees</td>
+      <td contenteditable="true">Indigenous Nations had sophisticated housing</td>
       <td contenteditable="true"></td>
       <td contenteditable="true"></td>
     </tr>
     <tr>
-      <td contenteditable="true">All Native Americans were hunters and gatherers</td>
-      <td contenteditable="true">Native Americans grew and created food</td>
+      <td contenteditable="true">All Indigenous Nations were hunters and gatherers</td>
+      <td contenteditable="true">Indigenous Nations grew and created food</td>
       <td contenteditable="true"></td>
       <td contenteditable="true"></td>
     </tr>
     <tr>
-      <td contenteditable="true">Native Americans couldn’t invent the wheel</td>
-      <td contenteditable="true">Native Americans understood how to use the wheel</td>
+      <td contenteditable="true">Indigenous Nations couldn’t invent the wheel</td>
+      <td contenteditable="true">Indigenous Nations understood how to use the wheel</td>
       <td contenteditable="true"></td>
       <td contenteditable="true"></td>
     </tr>
