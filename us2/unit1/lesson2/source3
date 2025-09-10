@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reading with Hover Popups - City Government</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    h1 { text-align: center; margin-bottom: 10px; }
+    .caption { font-size: 0.9em; color: #555; margin-bottom: 20px; }
+
+    img { max-width: 100%; display: block; margin: 0 auto 10px; border-radius: 6px; }
+
+    .term {
+      position: relative;
+      color: #004080;
+      border-bottom: 1px dashed #004080;
+      cursor: help;
+    }
+
+    .popup {
+      visibility: hidden;
+      width: 240px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      padding: 8px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.9em;
+    }
+
+    .popup::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    .term:hover .popup {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Abuses in City Government</h1>
+<img src="https://lh4.googleusercontent.com/Cc99VX9TJKw6KoTkz9c7XaLs2pidtD-VYS2ZsdNmXxEzkxBtsY-a6OziBYLRLH9CswFEa0-3EQThyz6gZc38AZ8" alt="City Government Corruption">
+<p class="caption">
+Source D: Abuses in City Government<br>
+Lincoln Steffens, a leading muckraker, exposed political corruption in American cities. Read the following excerpt and list abuses in city government that Steffens implies.
+</p>
+
+<p>
+<span class="term">Boss
+  <span class="popup">A person who controls a faction or local branch of a political party; may not hold official office.</span>
+</span>: A boss is a person who controls a faction or local branch of a political party. They do not necessarily hold public office themselves.
+
+“When I went to Cincinnati…I sought out 
+<span class="term">Boss Cox
+  <span class="popup">The political boss of Cincinnati described by Steffens, representing corruption in city government.</span>
+</span>. His office was over his “Mecca” saloon, in a mean little front hall room one flight up. The door was open. I saw a great 
+<span class="term">hulk
+  <span class="popup">A large, imposing person; here describing the boss.</span>
+</span> of a man, sitting alone, his back to the door, his feet up on the window sill; he was reading a newspaper. I walked in; he did not look up. “Mr. Cox?” I said. An affirmative grunt. “Mr. Cox, I understand that you were the boss of Cincinnati.” Slowly his feet came down, one by one. They slowly walked his chair around, and a stolid face turned to let two dark sharp eyes study me.  
+
+While they measured, I gave my name and explained that I was a “student of 
+<span class="term">politics
+  <span class="popup">The activities associated with governing a city, state, or country, including corruption.</span>
+</span>, corrupt politics, and bosses.” I repeated that I had heard he was the boss of Cincinnati. “Are you?” I asked. “I am,” he grumbled in his hoarse, throaty voice.  
+
+“Of course you have a 
+<span class="term">mayor
+  <span class="popup">The elected head of a city government.</span>
+</span>, and a 
+<span class="term">council
+  <span class="popup">A group of elected officials who make decisions for the city.</span>
+</span>, and 
+<span class="term">judges
+  <span class="popup">Officials who preside over courts and legal matters.</span>
+</span>?” “I have,” he admitted, “but” – he pointed with his thumb back over his shoulder to the desk – “I have a 
+<span class="term">telephone
+  <span class="popup">Used metaphorically here to show power and influence.</span>
+</span>, too.”  
+
+“And you have citizens, too, in your city? American men and women?” He stared a long moment, silent, then turned heavily back to his paper. That short interview was a summary of the truth about Cincinnati.
+</p>
+
+</body>
+</html>
