@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Source E: Abuses of Big Business</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 20px; background: #f9f9f9; }
+    h1, h2 { text-align: center; margin-bottom: 10px; }
+    .caption { font-size: 0.9em; color: #555; margin-bottom: 20px; text-align:center; }
+    .term { position: relative; color: #004080; border-bottom: 1px dashed #004080; cursor: help; }
+    .popup { visibility: hidden; width: 240px; background-color: #333; color: #fff; text-align: left; padding: 8px; border-radius: 6px; position: absolute; z-index: 1; bottom: 125%; left: 50%; transform: translateX(-50%); opacity: 0; transition: opacity 0.3s; font-size: 0.9em; }
+    .popup::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #333 transparent transparent transparent; }
+    .term:hover .popup { visibility: visible; opacity: 1; }
+  </style>
+</head>
+<body>
+
+<h1>Source E: Abuses of Big Business</h1>
+<p class="caption">
+  Ida Tarbell described the techniques used by industrialists such as John D. Rockefeller to build up his business, Standard Oil. Read and identify abuses of monopolistic practices.
+</p>
+
+<p>
+  <span class="term">Monopoly
+    <span class="popup">An enterprise that is the only seller of a good or service, free to set any price it chooses.</span>
+  </span>: A monopoly is an enterprise that is the only seller of a good or service. In the absence of government intervention, a monopoly is free to set any price it chooses.
+</p>
+
+<p>
+  “The success the firm of Rockefeller and Andrews achieved after Rockefeller went into it was explained for three or four years mainly by his extraordinary ability for 
+  <span class="term">bargaining
+    <span class="popup">Negotiating agreements with others, often to maximize profit or advantage.</span>
+  </span> and borrowing. Then the corporation’s chief competitors began to suspect something…Very often people who admit the facts, who are willing to see that Mr. Rockefeller has used 
+  <span class="term">force
+    <span class="popup">Coercion or pressure to achieve business goals.</span>
+  </span> and 
+  <span class="term">fraud
+    <span class="popup">Deception or trickery to gain unfair advantage.</span>
+  </span> to meet his goals, justify him by saying “It’s business.” It is a common enough thing to hear men arguing that ordinary laws of right and wrong do not apply in business.
+</p>
+
+</body>
+</html>
