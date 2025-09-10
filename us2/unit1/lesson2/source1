@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reading with Hover Popups</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    h1 { text-align: center; margin-bottom: 10px; }
+    .caption { font-size: 0.9em; color: #555; margin-bottom: 20px; }
+
+    img { max-width: 100%; display: block; margin: 0 auto 10px; border-radius: 6px; }
+
+    .term {
+      position: relative;
+      color: #004080;
+      border-bottom: 1px dashed #004080;
+      cursor: help;
+    }
+
+    .popup {
+      visibility: hidden;
+      width: 240px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      padding: 8px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; /* Position above the word */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.9em;
+    }
+
+    /* Arrow */
+    .popup::after {
+      content: "";
+      position: absolute;
+      top: 100%; /* At the bottom of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    .term:hover .popup {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Tenements in New York City</h1>
+<img src="https://lh5.googleusercontent.com/gYmxx5wrzf-w3bE6kwnzcXZGe3WcdbldhQJzwieX9K2M7qwQp-QcPJ-Xek8xqIlBNTQz5rjVaMBcGHp7jCdt-j8" alt="Tenement building">
+<p class="caption">
+Source B: Tenements in New York City<br>
+In <em>How the Other Half Lives</em>, Jacob Riis, a Danish immigrant who came to the United States in 1870, exposed the slum conditions in New York City tenement buildings using both the written word and the newly invented camera. Read his account and list the social ills described.
+</p>
+
+<p>
+“Lest anybody flatter himself with the notion that these were evils of a day that is happily past and may safely be forgotten, let me mention here three very recent instances of 
+<span class="term">tenement-house life
+  <span class="popup">Life in densely packed, poorly maintained apartment buildings for the working poor in 19th-century cities.</span>
+</span> 
+that came under my notice. One was the burning of a rear house in Mott Street, from appearances one of the original tenant-houses that made their owners rich. The fire made ten families 
+<span class="term">homeless
+  <span class="popup">Without a home; displaced due to disaster or eviction.</span>
+</span>, who had paid an average of $5 a month for their mean little 
+<span class="term">cubby-holes
+  <span class="popup">Very small, cramped rooms or spaces.</span>
+</span>. The owner himself told me that it was fully 
+<span class="term">insured
+  <span class="popup">Protected by insurance against financial loss due to fire or damage.</span>
+</span> for $800, though it brought him in $600 a year rent. He evidently considered himself especially entitled to be pitied for losing such valuable property.  
+
+Another was the case of a hard-working family of man and wife, young people from the old country, who took 
+<span class="term">poison
+  <span class="popup">A substance that can cause death when ingested.</span>
+</span> together in a Crosby Street tenement because they were “tired.” There was no other explanation, and none was needed when I stood in the room in which they had lived. It was in the attic with 
+<span class="term">sloping ceiling
+  <span class="popup">A ceiling that is not flat, but angled downward.</span>
+</span> and a single window so far out on the roof that it seemed not to belong to the place at all. With scarcely room enough to turn around in they had been compelled to pay five dollars and a half a month in advance.  
+
+The third instance was that of a 
+<span class="term">colored
+  <span class="popup">An outdated term referring to African Americans; used historically in the text.</span>
+</span> family of husband, wife, and baby in a wretched rear 
+<span class="term">rookery
+  <span class="popup">A dilapidated, overcrowded apartment building.</span>
+</span> in West Third Street. Their rent was eight dollars and a half for a single room on the top-story, so small that I was unable to get a photograph of it even by placing the camera outside the open door. Three short steps across either way would have measured its full extent.
+</p>
+
+</body>
+</html>
