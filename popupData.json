@@ -62,5 +62,25 @@
   "Domestic System": {
     "text": "A method of production in which goods are made at home by individual workers or families rather than in factories; also called the putting-out system",
     "img": "https://upload.wikimedia.org/wikipedia/commons/2/21/Domestic_system_illustration.jpg"
+  },
+  "Laissez-faire": {
+    "text": "An economic philosophy advocating minimal government interference in business and markets, often associated with industrial growth in the late 1800s and early 1900s",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Adam_Smith_engraving.jpg"
+  },
+  "Triangle": {
+    "text": "Refers to the Triangle Shirtwaist Factory, the site of a tragic fire in 1911 that killed 146 workers, mostly young immigrant women",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/40/Triangle_Shirtwaist_Factory_fire_on_March_25%2C_1911.jpg"
+  },
+  "Shirtwaist Fire": {
+    "text": "Another name for the Triangle Shirtwaist Factory fire of 1911, which exposed unsafe working conditions and led to major labor reforms",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Triangle_Shirtwaist_Factory_fire_escape.jpg"
+  },
+  "Overcrowding": {
+    "text": "The condition in which too many people live in a small space, common in urban tenements during the late 19th and early 20th centuries",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/Tenement_overcrowding.jpg"
+  },
+  "Sanitation": {
+    "text": "Public health conditions related to clean water, waste disposal, and hygiene, often lacking in rapidly growing industrial cities",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/2/2e/New_York_sanitation_1900.jpg"
   }
 }
