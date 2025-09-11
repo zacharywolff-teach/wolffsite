@@ -1,0 +1,35 @@
+{
+  "unit1Lesson1": {
+    "title": "Growth of Cities",
+    "learningGoal": "Describe how new technologies and innovations changed life for Americans",
+    "topics": ["Urbanization", "Population", "Net Worth", "Industry", "Power Loom", "Weaving", "Domestic System"],
+    "people": [],
+    "era": "1870-1920",
+    "resources": [
+      {"label": "Source 1: Net Worth of Industries", "url": "us2/unit1/lesson1/source1"},
+      {"label": "Source 2: Population of Cities", "url": "us2/unit1/lesson1/source2"},
+      {"label": "Source 3: Railroad Track Mileage", "url": "us2/unit1/lesson1/source3"},
+      {"label": "Source 4: Paintings", "url": "us2/unit1/lesson1/source4"},
+      {"label": "Source 5: Environment", "url": "us2/unit1/lesson1/source5"}
+    ],
+    "notes": "us2/unit1/lesson1/notes1",
+    "assessment": "Write a brief essay explaining misconceptions about Indigenous Nations."
+  },
+  "unit1Lesson2": {
+    "title": "Problems in Cities",
+    "learningGoal": "Explain the social and economic problems faced by city dwellers during urbanization.",
+    "topics": ["Laissez-faire", "Triangle", "Shirtwaist Fire", "Overcrowding", "Child Labor", "Sanitation"],
+    "people": [],
+    "era": "1870-1920",
+    "resources": [
+      {"label": "Source 1: Housing", "url": "us2/unit1/lesson2/source1"},
+      {"label": "Source 2: Food", "url": "us2/unit1/lesson2/source2"},
+      {"label": "Source 3: Government", "url": "us2/unit1/lesson2/source3"},
+      {"label": "Source 4: Business", "url": "us2/unit1/lesson2/source4"},
+      {"label": "Source 5: Workplace Conditions", "url": "us2/unit1/lesson2/source5"},
+      {"label": "Source 6: Workplace Safety", "url": "us2/unit1/lesson2/source6"}
+    ],
+    "notes": "us2/unit1/lesson2/notes1",
+    "assessment": "Create a chart illustrating urban problems and their effects on citizens."
+  }
+}
