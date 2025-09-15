@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Columbus Report - Part 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #004080;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Columbus Reports on His First Voyage, 1493 - Part 2</h1>
+  <p>This is part of a letter written by Columbus to the king and queen of Spain.</p>
+  <p>I have determined to write you this letter to inform you of everything that has been done and discovered in this voyage of mine.</p>
+  <p>
+    In the island, which I have said before was called Hispana, there are very lofty and beautiful mountains, great farms, groves and fields, most fertile both for cultivation and for pasturage, and well adapted for constructing buildings. The convenience of the harbors in this island, and the excellence of the rivers, in volume and salubrity, surpass human belief, unless one should see them. In it the trees, pasture-lands and fruits differ much from those of Juana. Besides, this Hispana abounds in various kinds of species, gold and metals.
+  </p>
+</body>
+</html>
