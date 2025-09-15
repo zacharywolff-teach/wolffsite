@@ -4,26 +4,35 @@
   <meta charset="UTF-8">
   <title>Columbus Report - Part 5</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      line-height: 1.6;
-      background: #f9f9f9;
-    }
-    h1 {
-      color: #004080;
-      text-align: center;
-    }
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; line-height: 1.6; background: #f9f9f9; }
+    h1 { color: #004080; text-align: center; }
+    .term { position: relative; color: #004080; border-bottom: 1px dashed #004080; cursor: help; }
+    .popup { visibility: hidden; width: 220px; background-color: #333; color: #fff; text-align: left; padding: 8px; border-radius: 6px; position: absolute; z-index: 1; bottom: 125%; left: 50%; transform: translateX(-50%); opacity: 0; transition: opacity 0.3s; font-size: 0.9em; }
+    .popup::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #333 transparent transparent transparent; }
+    .term:hover .popup { visibility: visible; opacity: 1; }
   </style>
 </head>
 <body>
-  <h1>Columbus Reports on His First Voyage, 1493 - Part 5</h1>
-  <p>This is part of a letter written by Columbus to the king and queen of Spain.</p>
-  <p>I have determined to write you this letter to inform you of everything that has been done and discovered in this voyage of mine.</p>
-  <p>
-    I gave them many beautiful and pleasing things, which I had brought with me, for no return whatever, in order to win their affection, and that they might become Christians and inclined to love our King and Queen and Princes and all the people of Spain; and that they might be eager to search for and gather and give to us what they have in and we greatly need.
-  </p>
+
+<h1>Columbus Reports on His First Voyage, 1493 - Part 5</h1>
+
+<p>I gave them many beautiful and pleasing 
+  <span class="term">things
+    <span class="popup">Gifts, items, or goods presented to someone.</span>
+  </span>, which I had brought with me, for no return whatever, in order to win their 
+  <span class="term">affection
+    <span class="popup">Fondness or care for others.</span>
+  </span>, and that they might become 
+  <span class="term">Christians
+    <span class="popup">Followers of Christianity, the religion based on the teachings of Jesus Christ.</span>
+  </span> and inclined to love our 
+  <span class="term">King and Queen
+    <span class="popup">Ferdinand and Isabella of Spain, who sponsored Columbus’s voyages.</span>
+  </span> and 
+  <span class="term">Princes
+    <span class="popup">Members of the royal family of Spain.</span>
+  </span> and all the people of Spain; and that they might be eager to search for, gather, and give to us what they have and we greatly need.
+</p>
+
 </body>
 </html>
