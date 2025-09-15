@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Columbus Report - Part 4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #004080;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Columbus Reports on His First Voyage, 1493 - Part 4</h1>
+  <p>This is part of a letter written by Columbus to the king and queen of Spain.</p>
+  <p>I have determined to write you this letter to inform you of everything that has been done and discovered in this voyage of mine.</p>
+  <p>
+    But when they see that they are safe, and all fear is banished, they are very guileless and honest, and very liberal of all they have. No one refuses the asker anything that he possesses; on the contrary, they themselves invite us to ask for it. They manifest the greatest affection towards all of us, exchanging valuable things for trifles, content with the very least thing or nothing at all.
+  </p>
+</body>
+</html>
