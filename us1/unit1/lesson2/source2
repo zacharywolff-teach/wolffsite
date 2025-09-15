@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Columbus Report 1493</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004080;
+    }
+
+    .term {
+      position: relative;
+      color: #004080;
+      border-bottom: 1px dashed #004080;
+      cursor: help;
+    }
+
+    .popup {
+      visibility: hidden;
+      width: 220px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      padding: 8px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.9em;
+    }
+
+    .popup::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    .term:hover .popup {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Columbus Reports on His First Voyage (1493)</h1>
+  <h2>Part 1</h2>
+
+  <p>
+    This is part of a letter written by 
+    <span class="term">Columbus
+      <span class="popup">Christopher Columbus, an Italian navigator who sailed for Spain in 1492.</span>
+    </span> 
+    to the 
+    <span class="term">king and queen of Spain
+      <span class="popup">King Ferdinand and Queen Isabella, who funded Columbus’s voyages.</span>
+    </span>.
+  </p>
+
+  <p>
+    On the 
+    <span class="term">thirty-third day
+      <span class="popup">Columbus left Cádiz, Spain, on August 3, 1492, and sighted land on October 12—about 33 days of sailing.</span>
+    </span> 
+    after leaving 
+    <span class="term">Cadiz
+      <span class="popup">A port city in southwestern Spain, from where Columbus set sail.</span>
+    </span> 
+    I came into the 
+    <span class="term">Indian Sea
+      <span class="popup">Columbus believed he had reached islands off the coast of Asia, which Europeans called the “Indies.”</span>
+    </span>, 
+    where I discovered many islands inhabited by numerous people. 
+    I 
+    <span class="term">took possession
+      <span class="popup">Claimed the land for Spain, despite the presence of Indigenous peoples.</span>
+    </span> 
+    of all of them for our most fortunate King by making public proclamation and unfurling his 
+    <span class="term">standard
+      <span class="popup">The royal flag of Spain, symbolizing Spanish authority.</span>
+    </span>, 
+    no one making any resistance.
+  </p>
+
+</body>
+</html>
