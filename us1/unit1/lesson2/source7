@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bartolomé De Las Casas Quote</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .term {
+      position: relative;
+      color: #004080;
+      border-bottom: 1px dashed #004080;
+      cursor: help;
+    }
+
+    .popup {
+      visibility: hidden;
+      width: 250px;
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+      padding: 8px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.9em;
+    }
+
+    .popup::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    .term:hover .popup {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    p {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://www.meisterdrucke.uk/kunstwerke/1260px/Theodore_de_Bry_-_Description_of_crimes_inflicted_on_Indians_by_Spanish_settlers_-_Conquistadors_m_-_%28MeisterDrucke-939381%29.jpg" alt="Description of crimes inflicted on Indians by Spanish settlers">
+
+  <p>
+    "They would cut an 
+    <span class="term">Indian's hands
+      <span class="popup">Refers to the Indigenous peoples of the Americas.</span>
+    </span> and leave them dangling by a shred of skin ... [and] they would test their 
+    <span class="term">swords
+      <span class="popup">Weapons with sharp blades used by soldiers and captains.</span>
+    </span> and their 
+    <span class="term">manly strength
+      <span class="popup">The physical power and skill of the Spanish captains.</span>
+    </span> on captured Indians and place 
+    <span class="term">bets
+      <span class="popup">Gambles made on who could kill the most or perform violent acts.</span>
+    </span> on the slicing off of heads or cutting of bodies in half with one blow. ... [One] cruel 
+    <span class="term">captain
+      <span class="popup">A leader of Spanish forces committing atrocities.</span>
+    </span> traveled over many 
+    <span class="term">leagues
+      <span class="popup">Units of distance used in the 16th century; roughly 3 miles per league.</span>
+    </span>, capturing all the 
+    <span class="term">Indians
+      <span class="popup">The local Indigenous people encountered by the Spanish.</span>
+    </span> he could find. Since the Indians would not tell him who their new 
+    <span class="term">lord
+      <span class="popup">Referring to a ruler or leader the Spanish wanted the Indians to obey.</span>
+    </span> was, he cut off the hands of some and threw others to the 
+    <span class="term">dogs
+      <span class="popup">Used to attack or kill prisoners.</span>
+    </span>, and thus they were torn to pieces."
+  </p>
+
+  <p style="text-align:right; font-style: italic;">
+    - Bartolomé De Las Casas
+  </p>
+
+</body>
+</html>
