@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Google Sheets Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .chart-container {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Jamestown Settlement Data</h1>
+    <p style="text-align: center;">Explore the historical data of the Jamestown Settlement through this interactive chart.</p>
+
+    <div class="chart-container">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2CAIWO3empHVufBltCNICV0gFbDoLNyW56FvpifkGyDbcGgSVgf8ogM_6WtwcpG7jRm2Gvswhz909KuHEfug/gviz/chartiframe?oid=770787048&resourcekey" 
+                title="Jamestown Settlement Data Chart">
+        </iframe>
+    </div>
+
+</body>
+</html>
