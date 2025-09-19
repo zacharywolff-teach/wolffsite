@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Captain John Smith Excerpt</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f9fc;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    margin: 10px 0 20px 0;
+    padding: 8px 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover { background-color: #1d4ed8; }
+
+/* User highlights */
+.user-highlight {
+    background-color: #fde68a;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Highlight toolbar */
+.highlight-toolbar {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background: #1e3a8a;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 5px;
+    z-index: 20;
+}
+
+.highlight-toolbar span {
+    cursor: pointer;
+}
+
+/* Tooltip words */
+.tooltip-word {
+    position: relative;
+    font-weight: bold;
+    cursor: help;
+    text-decoration: underline;
+    color: #1e3a8a;
+}
+
+.tooltip-word .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e3a8a;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: normal;
+    font-size: 0.9rem;
+    z-index: 10;
+    min-width: 200px;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.tooltip-word:hover .tooltip {
+    visibility: visible;
+}
+</style>
+</head>
+<body>
+
+<button id="highlightBtn">Highlight Selection</button>
+<button id="clearBtn">Clear Highlights</button>
+
+<p id="content">
+Six months after <span class="tooltip-word">Captain Smith<span class="tooltip">John Smith, English explorer and leader of Jamestown.</span></span> left, the cruelty of the <span class="tooltip-word">Powhatans<span class="tooltip">A confederation of Native American tribes in Virginia.</span></span>, the stupidity of our leaders, and the loss of our ships <span class="tooltip-word">when they sailed away<span class="tooltip">Refers to ships leaving Jamestown, reducing supplies and personnel.</span></span> caused 440 of the 500 people in Jamestown to die ...<br><br>
+
+We still call this time the <span class="tooltip-word">"Starving Time"<span class="tooltip">A period of extreme famine in Jamestown during the winter of 1609-1610.</span></span>. What we suffered was too terrible to talk about and too hard to believe. But the fault was our own. We starved because we did not plan well, work hard, or have good government. Our problems were not because the land was bad, as most people believe.<br><br>
+
+Excerpted from <span class="tooltip-word">Travels and Works of Captain John Smith, President of Virginia, and Admiral of New England, 1610<span class="tooltip">Historical account written by John Smith detailing his experiences in Jamestown.</span></span>.
+</p>
+
+<script>
+// Highlight selected text
+document.getElementById('highlightBtn').addEventListener('click', () => {
+    const selection = window.getSelection();
+    if (!selection.rangeCount) return;
+    const range = selection.getRangeAt(0);
+    if (range.collapsed) return;
+
+    // Prevent highlighting inside tooltip words
+    let ancestor = range.commonAncestorContainer;
+    while (ancestor && ancestor !== document.body) {
+        if (ancestor.classList && ancestor.classList.contains('tooltip-word')) return;
+        ancestor = ancestor.parentNode;
+    }
+
+    const span = document.createElement('span');
+    span.className = 'user-highlight';
+    
+    const extracted = range.extractContents();
+    span.appendChild(extracted);
+
+    // Highlight toolbar
+    span.addEventListener('click', (e) => {
+        e.stopPropagation();
+        removeExistingToolbars();
+        const toolbar = document.createElement('div');
+        toolbar.className = 'highlight-toolbar';
+        toolbar.innerHTML = '<span class="remove">❌</span><span class="copy">©</span>';
+
+        toolbar.querySelector('.remove').addEventListener('click', () => {
+            span.replaceWith(...span.childNodes);
+        });
+        toolbar.querySelector('.copy').addEventListener('click', () => {
+            navigator.clipboard.writeText(span.textContent);
+        });
+
+        span.appendChild(toolbar);
+    });
+
+    range.insertNode(span);
+    selection.removeAllRanges();
+});
+
+// Remove toolbars
+document.addEventListener('click', () => {
+    document.querySelectorAll('.highlight-toolbar').forEach(t => t.remove());
+});
+
+// Clear highlights but keep tooltips
+document.getElementById('clearBtn').addEventListener('click', () => {
+    const content = document.getElementById('content');
+    const cloned = content.cloneNode(true);
+    cloned.querySelectorAll('span.user-highlight').forEach(span => {
+        span.replaceWith(...span.childNodes);
+    });
+    content.innerHTML = cloned.innerHTML;
+});
+
+// Tooltip viewport adjustment
+document.querySelectorAll('.tooltip-word').forEach(word => {
+    word.addEventListener('mouseenter', () => {
+        const tooltip = word.querySelector('.tooltip');
+        const rect = tooltip.getBoundingClientRect();
+        const padding = 10;
+
+        if (rect.right > window.innerWidth - padding) {
+            tooltip.style.left = 'auto';
+            tooltip.style.right = '0';
+            tooltip.style.transform = 'none';
+        }
+        if (rect.left < padding) {
+            tooltip.style.left = '0';
+            tooltip.style.right = 'auto';
+            tooltip.style.transform = 'translateX(0)';
+        }
+    });
+
+    word.addEventListener('mouseleave', () => {
+        const tooltip = word.querySelector('.tooltip');
+        tooltip.style.left = '50%';
+        tooltip.style.right = 'auto';
+        tooltip.style.transform = 'translateX(-50%)';
+    });
+});
+</script>
+
+</body>
+</html>
