@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Template</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f9fc;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+h1 { color: #1e3a8a; }
+h2 { color: #1e40af; }
+
+button {
+    margin: 10px 0 20px 0;
+    padding: 8px 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover { background-color: #1d4ed8; }
+
+/* User highlights */
+.user-highlight {
+    background-color: #fde68a;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Highlight toolbar */
+.highlight-toolbar {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background: #1e3a8a;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 5px;
+    z-index: 20;
+}
+
+.highlight-toolbar span {
+    cursor: pointer;
+}
+
+/* Tooltip words */
+.tooltip-word {
+    position: relative;
+    font-weight: bold;
+    cursor: help;
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+.tooltip-word .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e3a8a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: normal;
+    font-size: 0.95rem;
+    z-index: 10;
+    min-width: 250px;
+    max-width: 95%;
+    word-wrap: break-word;
+}
+
+.tooltip-word:hover .tooltip {
+    visibility: visible;
+}
+</style>
+</head>
+<body>
+
+<!-- Top Section with Title, Subtitle, and Image -->
+<div id="top-section" style="text-align: center; margin-bottom: 20px;">
+    <h1>Income from Tobacco Growth</h1>
+
+    <figure style="margin-top: 15px;">
+        <img src="https://docs.google.com/drawings/d/e/2PACX-1vRObaLy-XfnAtuWklmmZ8JZ4MqDTqZmARXkCBa8y8SnaP4lvlMlOoRtzH6qq4HUE_wGQhYwuuskhvsI/pub?w=960&h=720" alt="Jamestown" style="max-width: 100%; height: auto; border-radius: 8px;">
+        <figcaption style="margin-top: 8px; font-size: 0.9rem; color: #555;">Map of Jamestown settlement, circa 1607</figcaption>
+    </figure>
+</div>
+
