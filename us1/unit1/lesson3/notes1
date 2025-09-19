@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jamestown Notes</title>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td {
+    min-width: 150px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Jamestown Notes (Editable)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Evidence of Unpreparedness</th>
+      <th>Evidence of Struggle</th>
+      <th>Evidence of Success</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+    <tr>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+    <tr>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+    <tr>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
