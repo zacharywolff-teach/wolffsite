@@ -5,3 +5,67 @@ The colony is in great <span class="tooltip-word">disarray<span class="tooltip">
 <br><br>
 Letter from Third Governor of Virginia Colony
 </p>
+<style>
+/* Tooltip word styling */
+.tooltip-word {
+    position: relative;
+    font-weight: bold;
+    cursor: help;
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+.tooltip-word .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e3a8a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: normal;
+    font-size: 0.95rem;
+    z-index: 10;
+    min-width: 250px;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.tooltip-word:hover .tooltip {
+    visibility: visible;
+}
+</style>
+
+<script>
+// Prevent tooltips from overflowing viewport
+document.querySelectorAll('.tooltip-word').forEach(word => {
+    word.addEventListener('mouseenter', () => {
+        const tooltip = word.querySelector('.tooltip');
+        const rect = tooltip.getBoundingClientRect();
+        const padding = 10; // margin from edges
+
+        // Shift tooltip left if overflowing right
+        if (rect.right > window.innerWidth - padding) {
+            tooltip.style.left = 'auto';
+            tooltip.style.right = '0';
+            tooltip.style.transform = 'none';
+        }
+
+        // Shift tooltip right if overflowing left
+        if (rect.left < padding) {
+            tooltip.style.left = '0';
+            tooltip.style.right = 'auto';
+            tooltip.style.transform = 'none';
+        }
+    });
+
+    word.addEventListener('mouseleave', () => {
+        const tooltip = word.querySelector('.tooltip');
+        tooltip.style.left = '50%';
+        tooltip.style.right = 'auto';
+        tooltip.style.transform = 'translateX(-50%)';
+    });
+});
+</script>
