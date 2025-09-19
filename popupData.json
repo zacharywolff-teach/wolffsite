@@ -19,66 +19,6 @@
     "text": "Explorers who contacted Indigenous Nations",
     "img": "https://www.historyhit.com/app/uploads/2021/09/Famous-explorers-cover-image.jpg"
   },
-  "Urbanization": {
-    "text": "The process of people moving from rural areas to cities, leading to the growth and expansion of cities",
-    "img": "https://www.acash.org.pk/wp-content/uploads/2024/10/andy-bridge-m5NsiQfHJ_g-unsplash.jpg"
-  },
-  "Tenement": {
-    "text": "A crowded, often poorly built apartment building where many immigrant and working-class families lived during the late 1800s and early 1900s",
-    "img": "https://images.squarespace-cdn.com/content/v1/545a686fe4b059216c7cb8cc/1558041350415-HODXMV5YFZLE7590KYCE/mac_0796.jpg"
-  },
-  "Child Labor": {
-    "text": "The practice of children working in factories, mines, or other jobs, often for long hours, low pay, and in unsafe conditions",
-    "img": "https://www.bls.gov/opub/mlr/2017/images/schuman2_cover_art.png"
-  },
-  "Ellis Island": {
-    "text": "An immigration station in New York Harbor (opened in 1892) where millions of immigrants, mostly from Europe, were processed before entering the United States",
-    "img": "https://www.statueofliberty.org/wp-content/uploads/2020/04/19.510-awaiting-examination-CROP-1962x1480.jpg"
-  },
-  "Immigrant": {
-    "text": "A person who leaves their home country to live permanently in another country",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Immigrants_arriving_at_Ellis_Island.jpg"
-  },
-  "Population": {
-    "text": "The total number of people living in a particular area, city, country, or region",
-    "img": "https://imageio.forbes.com/specials-images/imageserve/679abdf9c7848e4f30b8c026/Illustration-of-USA-immigration/960x0.jpg?format=jpg"
-  },
-  "Net Worth": {
-    "text": "The total value of a person's, company's, or organization's assets minus any debts or liabilities",
-    "img": "https://cdn.prod.website-files.com/5ded36b5e942e74b13468d23/605aa17aaa377c5afb73b864_00-Header%402x.png"
-  },
-  "Industry": {
-    "text": "Economic activity concerned with the production of goods or services, often organized in factories or businesses",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA_KfMarBUTCz9WNoswYRS66jJK8NAquWzgVj5iW5vtNm_BI0:https://kaizen.com/wp-content/uploads/2024/05/capa-22-scaled.webp&s"
-  },
-  "Power Loom": {
-    "text": "A mechanized loom powered by water, steam, or electricity that speeds up the weaving of cloth compared to manual handlooms",
-    "img": "https://classroomclipart.com/image/static7/preview2/photo-english-power-loom-for-weaving-55478.jpg"
-  },
-  "Weaving": {
-    "text": "The process of interlacing threads or yarns at right angles to make fabric or cloth",
-    "img": "https://d2hijos0r2m9rf.cloudfront.net/uploads/blog_image/blog_184.jpg"
-  },
-  "Domestic System": {
-    "text": "A method of production in which goods are made at home by individual workers or families rather than in factories; also called the putting-out system",
-    "img": "https://www.historylearningsite.co.uk/wp-content/uploads/2020/06/domest1.gif"
-  },
-  "Laissez-faire": {
-    "text": "An economic philosophy advocating minimal government interference in business and markets, often associated with industrial growth in the late 1800s and early 1900s",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Adam_Smith_engraving.jpg"
-  },
-  "Triangle Shirtwaist Fire": {
-    "text": "Refers to the Triangle Shirtwaist Factory, the site of a tragic fire in 1911 that killed 146 workers, mostly young immigrant women",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/4/40/Triangle_Shirtwaist_Factory_fire_on_March_25%2C_1911.jpg"
-  },
-  "Overcrowding": {
-    "text": "The condition in which too many people live in a small space, common in urban tenements during the late 19th and early 20th centuries",
-    "img": "https://borgenproject.org/wp-content/uploads/613445810_2249c2d193_z-530x341.jpg"
-  },
-  "Sanitation": {
-    "text": "Public health conditions related to clean water, waste disposal, and hygiene, often lacking in rapidly growing industrial cities",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mTKtBq4dhe7JIt3101tspLsHGwxRpQpJCLJwPRgiLzRsu_7c:https://www.kauveryhospital.com/blog/wp-content/uploads/2022/03/Maintaining-sanitation-and-hygiene-in-the-Kitchen-1.jpg"
-  },
   "Exploration": {
     "text": "The act of traveling to new regions for discovery, trade, or conquest, often driven by curiosity, economic interests, or national expansion.",
     "img": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Exploration_Ships_Age_of_Discovery.jpg"
@@ -130,5 +70,41 @@
   "Bartolomé de las Casas": {
     "text": "A Spanish priest and historian who advocated for the rights of Indigenous peoples, criticizing the mistreatment and enslavement by Spanish colonizers.",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fray_Bartolom%C3%A9_de_las_Casas.jpg/960px-Fray_Bartolom%C3%A9_de_las_Casas.jpg"
+  },
+  "Virginia Trading Company": {
+    "text": "A company formed to make money by trading and settling in Virginia.",
+    "img": "https://cdn.britannica.com/57/131657-050-6303E63B/arms-Virginia-Company-of-London-1600.jpg"
+  },
+  "John Smith": {
+    "text": "An English leader who helped Jamestown survive.",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4BiQfA-ZOifZ99LdOGyolchR8F8wyKnTvgQMVlLSpt7RNUZ-:https://m.landofthebrave.info/images/captain-john-smith.jpg&s"
+  },
+  "Chief Powhatan": {
+    "text": "Leader of the Powhatan Confederacy, a group of Native American tribes.",
+    "img": "https://cdn.britannica.com/07/164207-050-163AE184/Powhatan.jpg"
+  },
+  "Jamestown Settlers": {
+    "text": "The first English colonists who settled in Jamestown, Virginia in 1607.",
+    "img": "https://www.worldhistoryedu.com/wp-content/uploads/2020/06/National-Park-Service-Jamestown-Landings-starting-from-1607.png"
+  },
+  "Powhatan Confederacy": {
+    "text": "A group of Native American tribes in Virginia united under Chief Powhatan.",
+    "img": "https://www.worldhistory.org/uploads/images/13475.jpeg"
+  },
+  "Jamestown": {
+    "text": "The first permanent English settlement in America (Virginia).",
+    "img": "https://cdn.britannica.com/80/83680-050-4494A347/Jamestown-Fort-Virginia-1608.jpg"
+  },
+  "Settlers": {
+    "text": "People who moved to a new place to live, like in Jamestown.",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/03/Pocahontas-06.jpg"
+  },
+  "Starving Time": {
+    "text": "A period when Jamestown settlers had little food and many died.",
+    "img": "https://encyclopediavirginia.org/wp-content/uploads/2020/11/1141hpr_89f8e4687bd04ef-1200x823.jpg"
+  },
+  "Tobacco": {
+    "text": "The planting and farming of tobacco crops.",
+    "img": "https://toolmakingart.com/images/Garden/seeds/tobacco%2003%20seedpods.JPG"
   }
 }
