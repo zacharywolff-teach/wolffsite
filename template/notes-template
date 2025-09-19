@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Indigenous Nations Misconceptions</title>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td {
+    min-width: 150px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Indigenous Nations Facts (Editable)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>What some think</th>
+      <th>What is actually true</th>
+      <th>How do we know this is true?</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td contenteditable="true">Indigenous Nations lived in a wilderness and didn’t change much</td>
+      <td contenteditable="true">Indigenous Nations changed their environment</td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+    <tr>
+      <td contenteditable="true">Indigenous Nations had simple houses and mostly lived in teepees</td>
+      <td contenteditable="true">Indigenous Nations had sophisticated housing</td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+    <tr>
+      <td contenteditable="true">All Indigenous Nations were hunters and gatherers</td>
+      <td contenteditable="true">Indigenous Nations grew and created food</td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+    <tr>
+      <td contenteditable="true">Indigenous Nations couldn’t invent the wheel</td>
+      <td contenteditable="true">Indigenous Nations understood how to use the wheel</td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
