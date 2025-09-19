@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Template</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f7f9fc;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+h1 { color: #1e3a8a; }
+h2 { color: #1e40af; }
+
+button {
+    margin: 10px 0 20px 0;
+    padding: 8px 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover { background-color: #1d4ed8; }
+
+/* User highlights */
+.user-highlight {
+    background-color: #fde68a;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Highlight toolbar */
+.highlight-toolbar {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background: #1e3a8a;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 5px;
+    z-index: 20;
+}
+
+.highlight-toolbar span {
+    cursor: pointer;
+}
+
+/* Tooltip words */
+.tooltip-word {
+    position: relative;
+    font-weight: bold;
+    cursor: help;
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+.tooltip-word .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e3a8a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: normal;
+    font-size: 0.95rem;
+    z-index: 10;
+    min-width: 250px;
+    max-width: 95%;
+    word-wrap: break-word;
+}
+
+.tooltip-word:hover .tooltip {
+    visibility: visible;
+}
+</style>
+</head>
+<body>
+
+<h1>Jamestown: The First Permanent English Settlement</h1>
+<h2>Subheading: Early Challenges and Successes</h2>
+
+<button id="highlightBtn">Highlight Selection</button>
+<button id="clearBtn">Clear Highlights</button>
+
+<p id="content">
+The <span class="tooltip-word">Settlers<span class="tooltip">A group of people who move to a new region to live there.</span></span> arrived in Virginia in 1607 and faced many difficulties. During the <span class="tooltip-word">Starving Time<span class="tooltip">A period when food was scarce and many colonists died.</span></span>, almost half of the population perished due to hunger and disease. The <span class="tooltip-word">Tobacco<span class="tooltip">A crop cultivated for commercial use; in Jamestown, it was tobacco.</span></span> quickly became an important source of income. Leaders like <span class="tooltip-word">John Smith<span class="tooltip">An English captain who helped the Jamestown colony survive its early years.</span></span> negotiated with the <span class="tooltip-word">Powhatan Confederacy<span class="tooltip">A group of Native American tribes led by Chief Powhatan in Virginia.</span></span>. The <span class="tooltip-word">Virginia Trading Company<span class="tooltip">A company formed to fund the settlement and trading in Virginia.</span></span> invested resources to make the colony profitable.
+</p>
+
+<script>
+// User highlight selected text
+document.getElementById('highlightBtn').addEventListener('click', () => {
+    const selection = window.getSelection();
+    if (!selection.rangeCount) return;
+    const range = selection.getRangeAt(0);
+    if (range.collapsed) return;
+
+    // Prevent highlighting inside tooltip words
+    let ancestor = range.commonAncestorContainer;
+    while (ancestor && ancestor !== document.body) {
+        if (ancestor.classList && ancestor.classList.contains('tooltip-word')) return;
+        ancestor = ancestor.parentNode;
+    }
+
+    // Create span for user highlight
+    const span = document.createElement('span');
+    span.className = 'user-highlight';
+    span.textContent = selection.toString();
+
+    // Add click toolbar
+    span.addEventListener('click', (e) => {
+        e.stopPropagation();
+        removeExistingToolbars();
+        const toolbar = document.createElement('div');
+        toolbar.className = 'highlight-toolbar';
+        toolbar.innerHTML = '<span class="remove">❌</span><span class="copy">©</span>';
+
+        toolbar.querySelector('.remove').addEventListener('click', () => {
+            span.replaceWith(...span.childNodes);
+        });
+        toolbar.querySelector('.copy').addEventListener('click', () => {
+            navigator.clipboard.writeText(span.textContent);
+        });
+
+        span.appendChild(toolbar);
+    });
+
+    range.deleteContents();
+    range.insertNode(span);
+    selection.removeAllRanges();
+});
+
+// Remove existing toolbars when clicking elsewhere
+document.addEventListener('click', () => {
+    document.querySelectorAll('.highlight-toolbar').forEach(t => t.remove());
+});
+
+// Clear all highlights
+document.getElementById('clearBtn').addEventListener('click', () => {
+    const content = document.getElementById('content');
+    const cloned = content.cloneNode(true);
+    cloned.querySelectorAll('span.user-highlight').forEach(span => {
+        span.replaceWith(...span.childNodes);
+    });
+    content.innerHTML = cloned.innerHTML;
+});
+
+// Prevent tooltips from overflowing viewport
+document.querySelectorAll('.tooltip-word').forEach(word => {
+    word.addEventListener('mouseenter', () => {
+        const tooltip = word.querySelector('.tooltip');
+        const rect = tooltip.getBoundingClientRect();
+        const padding = 10; // small margin from edges
+
+        // Shift tooltip left if overflowing right
+        if (rect.right > window.innerWidth - padding) {
+            tooltip.style.left = 'auto';
+            tooltip.style.right = '0';
+            tooltip.style.transform = 'none';
+        }
+
+        // Shift tooltip right if overflowing left
+        if (rect.left < padding) {
+            tooltip.style.left = '0';
+            tooltip.style.right = 'auto';
+            tooltip.style.transform = 'none';
+        }
+    });
+
+    word.addEventListener('mouseleave', () => {
+        const tooltip = word.querySelector('.tooltip');
+        tooltip.style.left = '50%';
+        tooltip.style.right = 'auto';
+        tooltip.style.transform = 'translateX(-50%)';
+    });
+});
+</script>
+
+</body>
+</html>
